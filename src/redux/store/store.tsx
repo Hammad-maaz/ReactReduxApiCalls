@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { loadingReducer } from "../slice/loadingSlice";
 import { apiReducer } from "../slice/postsApiSlice";
+import { UserDetailsReducer } from "../slice/userDetailsSlice";
 
 const store = configureStore({
     reducer: {
         loading: loadingReducer,
-        postsApiSlice: apiReducer
+        postsApiSlice: apiReducer,
+        userDetails: UserDetailsReducer
     }
 })
 
