@@ -11,7 +11,7 @@ const ApiData:React.FC = () => {
     const error = useSelector((state: RootState) => state.postsApiSlice.error);
 
     useEffect(() => {
-        dispatch(postDataFunction())
+        dispatch(postDataFunction("1"))
     }, [])
 
     return(
