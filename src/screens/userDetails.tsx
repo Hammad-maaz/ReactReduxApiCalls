@@ -15,7 +15,6 @@ const userDetails:React.FC = () => {
   return (
     <View style={{flex: 1, flexDirection: "column"}}>
         <Text style={{fontSize: 20, fontWeight: "bold", textAlign: "center"}}>User Details</Text>
-        <Text>{selector.loading.toString()}</Text>
         <Text>{selector.value?.firstName}</Text>
         <Text>{selector.value?.lastName}</Text>
         <Text>{selector.value?.email}</Text>
