@@ -15,7 +15,7 @@ const FlashListExample = () => {
           <Text>{item.title}</Text>
         </View>
       )}
-      estimatedItemSize={30}
+      estimatedItemSize={10}
       keyExtractor={(item) => item.id}
     />
   );
