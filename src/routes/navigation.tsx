@@ -4,6 +4,7 @@ import Loading from "../screens/redux_loading";
 import userDetails from "../screens/userDetails";
 import AllPostDataView from "../screens/allPostDataView";
 import loginScreen from "../screens/loginScreen";
+import FlashListExample from "../screens/flash_list";
 
 
 export type stackParamsList = {
@@ -11,13 +12,15 @@ export type stackParamsList = {
     loading: undefined,
     userDetails: undefined,
     allPostData: undefined,
-    loginScreen: undefined
+    loginScreen: undefined,
+    flashScreen: undefined
 }
 
 const Stack = createStackNavigator<stackParamsList>();
 const StackNavigation: React.FC = () => {
     return(
         <Stack.Navigator>
+            <Stack.Screen name="flashScreen" component={FlashListExample}/>
             <Stack.Screen name = "loginScreen" component={loginScreen} />
             <Stack.Screen name = "allPostData" component={AllPostDataView} />
             <Stack.Screen name = "userDetails" component={userDetails} />
